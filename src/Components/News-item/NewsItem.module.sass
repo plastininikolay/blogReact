@@ -1,0 +1,32 @@
+.item
+    display: flex
+    justify-content: space-between
+    transition: 0.5s
+    cursor: pointer
+    &__img
+        width: 430px
+        height: 250px  
+        overflow: hidden  
+        & img
+            object-fit: cover
+            transition: 0.5s
+    &:hover
+        transform: scale(1.05)
+        transition: 0.5s
+    &__text_wrapper
+        width: 424px
+    &__header
+        font-weight: bold
+        font-size: 28px
+        line-height: 38px
+    &__date
+            margin-top: 10px
+            color: #888888
+            font-weight: normal
+            font-size: 14px
+            line-height: 19px
+    &__descr
+        margin-top: 36px
+        font-weight: normal
+        font-size: 18px
+        line-height: 30px

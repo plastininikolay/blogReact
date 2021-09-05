@@ -1,0 +1,45 @@
+.header 
+    position: relative
+    margin-bottom: 50px
+    &__wrapper 
+        padding: 38px 55px
+        display: flex
+        justify-content: center   
+        align-items: center
+    .burger__menu  
+        height: 17px
+        width: 30px
+        position: fixed
+        left: 55px
+        top: 53px
+        cursor: pointer
+        z-index: 10  
+        &:before, &:after  
+            content: ''
+            display: block
+            width: 100%
+            height: 5px
+            background-color: #000
+            position: absolute
+            transition: 0.3s
+        &:before
+            top: 0
+        &:after
+            bottom: 0
+        &_opened
+            &:before, &:after  
+                transition: 0.3s
+            &:before
+                transform: translateY(6px) rotate(45deg);
+            &:after
+                transform: translateY(-6px) rotate(-45deg);
+    &__logo
+        font-family: 'Montserrat', sans-serif
+        font-size: 36px
+        font-weight: bold
+        cursor: pointer
+    &__icon
+        position: fixed
+        right: 55px
+        top: 38px
+        cursor: pointer
