@@ -16,22 +16,27 @@
     &__header
         font-weight: bold
         font-size: 24px
-        margin-bottom: 50px
-    &__errors
+        margin-bottom: 25px
+    &__errors_email, &__errors_password
         position: absolute
-        top: 30px
         color: $red-color
-        top: 88px
         font-size: 18px
+    &__errors_email 
+        top: 149px
+    &__errors_password
+        top: 230px
+
     input
         &[type="text"], &[type="password"], &[type="email"]
             width: 288px 
             height: 41px
             border: 1px solid #000000
-            margin-bottom: 18px
+            margin-bottom: 40px
             padding: 10px
             font-size: 18px
             font-weight: 400
+        &[type="password"]
+            margin-bottom: 50px
         &[type="submit"]
             background: #000
             color: #fff
@@ -40,15 +45,15 @@
             border: none
             cursor: pointer
     &__exit
-        height: 17px
+        height: 30px
         width: 30px
         position: absolute
         right: 25px
         top: 25px
         cursor: pointer
         z-index: 10  
-        background: none;
-        border: none;
+        background: none
+        border: none
         &:before, &:after  
             content: ''
             display: block
@@ -58,8 +63,8 @@
             position: absolute
             transition: 0.3s
         &:before
-            top: 0
-            transform: translateY(7px) rotate(45deg);
+            top: 21%
+            transform: translateY(7px) rotate(45deg)
         &:after
-            bottom: 0
-            transform: translateY(-7px) rotate(-45deg);
+            bottom: 21%
+            transform: translateY(-7px) rotate(-45deg)

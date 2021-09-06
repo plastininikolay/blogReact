@@ -24,21 +24,24 @@ function SignIn({openModal, setOpenModal, IconRef}) {
       };
 
     const buttonRef = React.useRef(null)
-    const outSideClickHandlerModal = (event) => {
-        const path = event.path || (event.composedPath && event.composedPath());
-        if (!path.includes(buttonRef.current) && !path.includes(IconRef.current)){ 
-            setOpenModal(false)
-        }
-    };
 
-    React.useEffect(()=> {document.body.addEventListener('click', outSideClickHandlerModal)},[]);
+    React.useEffect(()=> {
+        const outSideClickHandlerModal = (event) => {
+            const path = event.path || (event.composedPath && event.composedPath());
+            if (!path.includes(buttonRef.current) && !path.includes(IconRef.current)){ 
+                setOpenModal(false)
+            }
+        };
+        document.body.addEventListener('click', outSideClickHandlerModal)
+    },[buttonRef, IconRef, setOpenModal]);
 
     return (
         <>
         {openModal ?
             <form onSubmit={handleSubmit(onSubmitHandler)} ref={buttonRef} className={styles.modal}>
             <button  onClick={()=> setOpenModal(false)}  className={styles.modal__exit}></button>
-            <div className={styles.modal__errors}>{errors.email?.message}  {errors.password?.message}</div>
+            <div className={styles.modal__errors_email}>{errors.email?.message} </div>
+            <div className={styles.modal__errors_password}>{errors.password?.message}</div>
             <div className={styles.modal__header}>Войти в админ панель</div>
             <input {...register("email")} type="text" placeholder="Введите email" />
             <input  {...register("password")} type="password"placeholder="Введите пароль" />

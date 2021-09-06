@@ -1,0 +1,18 @@
+{"ShortNews" :[
+    { "id": 1, 
+      "name": "How to be more productive?",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .."},
+    { "id": 2, 
+      "name": "Do these every single day and you will become a more creative person",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1630892269466-bb170495c2fb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad ..."},
+    { "id": 3, 
+      "name": "Destinations you want to visit",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1630833445492-6dda89a2adb5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .."}
+  ]
+}

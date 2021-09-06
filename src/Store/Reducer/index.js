@@ -1,5 +1,6 @@
 import { combineReducers } from "redux";
+import ShortNews from "./ShortNews";
 
-const rootReducer = combineReducers({})
+const rootReducer = combineReducers({ShortNews})
 
 export default rootReducer;

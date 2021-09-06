@@ -10,22 +10,24 @@
         height: 17px
         width: 30px
         position: fixed
-        left: 55px
-        top: 53px
+        left: 36px
+        top: 33px
         cursor: pointer
         z-index: 10  
+        box-sizing: content-box
+        padding: 20px
         &:before, &:after  
             content: ''
             display: block
-            width: 100%
+            width: inherit
             height: 5px
             background-color: #000
             position: absolute
             transition: 0.3s
         &:before
-            top: 0
+            top: 20px
         &:after
-            bottom: 0
+            top: 32px
         &_opened
             &:before, &:after  
                 transition: 0.3s
@@ -40,6 +42,6 @@
         cursor: pointer
     &__icon
         position: fixed
-        right: 55px
-        top: 38px
+        left: calc(100vw - 105px)
+        top: 34px
         cursor: pointer

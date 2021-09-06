@@ -1,0 +1,63 @@
+@import 'sass/variables'
+.contact
+    position: fixed
+    bottom: 0
+    width: 921px
+    right: 0
+    border-bottom: 284px solid #fff
+    border-left: 80px solid transparent
+    z-index: 2
+    transition: 0.5s
+    &__wrapper
+        position: absolute
+        top: 60px
+        left: 85px
+    &__title
+        font-weight: bold
+        font-size: 36px
+        line-height: 46px
+    &__descr
+        margin-top: 12px
+        font-size: 18px
+        font-weight: normal
+        line-height: 26px
+        color: #949799
+    form
+        margin-top: 24px
+        display: flex
+        justify-content: space-between
+        width: 655px
+    fieldset
+        border: none
+        width: 367px
+    legend
+        font-weight: normal
+        font-size: 14px
+        line-height: 19px
+        span
+            color: $red-color
+            margin-left: 10px
+    input
+        &[type="text"]
+            margin-top: 7px
+            background: none
+            border: none
+            border-bottom: 2px solid #000
+            width: inherit
+            padding: 4px
+            &:focus-visible
+                outline: none
+
+        &[type="submit"]
+            width: 245px
+            background: #F2F2F2
+            border: 1px solid #000
+            font-size: 16px
+            line-height: 24px
+            transform: skewX(340deg)
+            cursor: pointer
+            &:active
+                background: #dfdfdf
+.contact_disabled
+    right: -934px
+    transition: 0.5s
