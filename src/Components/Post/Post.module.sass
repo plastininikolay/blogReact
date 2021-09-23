@@ -1,70 +1,89 @@
+@import 'sass/mixins'
 .post
     display: flex
     flex-direction: column
     align-items: center
-    h1
-        margin-bottom: 5px
+    h2
+        margin-bottom: rem-f(5)
         line-height: 32px
+        font-weight: bold
     &__date
         font-weight: normal
-        font-size: 12px
-        line-height: 32px
+        font-size: rem-f(12)
+        line-height: 6.4
         color: #888888
-        margin-bottom: 30px
+        margin-bottom: rem-f(30)
     &__img
         width: 100%
         height: 280px
-        margin-bottom: 30px
+        margin-bottom: rem-f(30)
         img
             object-fit: cover
     &__text
         font-weight: normal
-        font-size: 18px
-        line-height: 36px
+        font-size: rem-f(18)
+        line-height: 2
 .comments
     display: flex
     flex-direction: column
     text-align: center
     h3
-        margin-bottom: 15px
+        margin-bottom: rem-f(15)
     textarea
-        width: 880px
-        height: 127px
+        width: 100%
+        height: rem-f(150)
         background: #F5F5F5
         border: 1px solid #D0D0D0
         padding: 7px 10px
-        margin-bottom: 21px
+        margin-bottom: rem-f(21)
         resize: none
     input
         &[type="submit"]
             float: right
-            padding: 10px 40px
+            padding: rem-f(10) rem-f(40)
             background: #555555
             border-radius: 5px
             color: #fff
             font-weight: 400
             border: none
+            cursor: pointer
+            font-size: rem-f(13)
+            &:active
+                background: #3d3d3d
     &__other
-        margin-top: 80px
-        font-size: 16px
-        line-height: 24px 
+        margin-top: rem-f(80)
+        font-size: rem-f(16)
+        line-height: 1.5
     &__item
         display: flex
-        margin-bottom: 20px
+        margin-bottom: rem-f(20)
         &:last-child
             margin-bottom: 0
         img
             margin-right: 20px
-            width: auto;
+            width: auto
             border-radius: 50%
         &_wrapper
             text-align: left
         &_text
             background: #EEE
-            padding: 15px
+            padding: rem-f(15)
             font-weight: 400
         &_date
-            font-size: 12px
-            line-height: 32px
+            font-size: rem-f(12)
+            line-height: 2.6
             color: #888888
             font-weight: 400
+@media screen and (max-width:500px)
+.post
+    &__img
+        height: rem-f(205)
+    h1
+        text-align: center
+.comments
+    textarea
+        width: 100%
+    input
+        &[type="submit"]
+            float: initial
+

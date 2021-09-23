@@ -12,5 +12,5 @@ export const fetchNews = () => (dispatch) => {
     setTimeout(() =>
     axios.get('http://localhost:3000/db.json').then(({data})=>{
       dispatch(setNewsDis(data.ShortNews));
-    }), 1000);
+    }), 500);
 }

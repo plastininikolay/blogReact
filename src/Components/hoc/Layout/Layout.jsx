@@ -10,19 +10,20 @@ function Layout(props) {
     const [openMenu, setOpenMenu] = React.useState(false)
     const [openModal, setOpenModal] = React.useState(false)
     const [openContact, setOpenContact] = React.useState(false)
+    const [switchModal, setSwitchModal] = React.useState(false)
 
     const IconRef = React.useRef(null);
     const buttonRef = React.useRef(null);
     const contactRef = React.useRef(null);
 
-    const overlayInitialised = () => (openMenu === true || openModal === true) ? true : false
+    const overlayInitialised = () => (openMenu === true || openModal === true)
 
     return(
         <>
         <div className={(overlayInitialised() === true) ? styles.overlay_on : styles.overlay_off}></div>
         <Header buttonRef={buttonRef} IconRef={IconRef} setOpenMenu={setOpenMenu} openMenu={openMenu} setOpenModal={setOpenModal} setOpenContact={setOpenContact} />
         <MainMenu contactRef={contactRef} buttonRef={buttonRef} openMenu={openMenu} setOpenMenu={setOpenMenu} setOpenContact={setOpenContact}/>
-        <SignIn IconRef={IconRef} openModal={openModal} setOpenModal={setOpenModal} />
+        <SignIn IconRef={IconRef} openModal={openModal} setOpenModal={setOpenModal} switchModal={switchModal} setSwitchModal={setSwitchModal} />
         <ContactUs contactRef={contactRef} openContact={openContact} />
         <div className="content">
             <div className="container">

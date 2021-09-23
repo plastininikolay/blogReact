@@ -14,5 +14,88 @@
       "date": "19 May 2021, 3 comments",
       "img": "https://images.unsplash.com/photo-1630833445492-6dda89a2adb5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
       "short_text" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .."}
+  ],
+  "DetailNews" : [
+    {
+      "id": 1,
+      "name": "How to be more productive?",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1593642632823-8f785ba67e45?ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "comments": [
+        {
+          "id": 136,
+          "avatar": "",
+          "comment": "I like it!",
+          "date": "20 May 2021"
+        },
+        {
+          "id": 120,
+          "avatar": "",
+          "comment": "I love your writing style! It’s easy to understand and so engaging to read it until the end of the line! I have read so many productivity tips and this is so far the best I found! On this fast-changing world we need to be more productive. I wrote some life tips also, you can check on my page. Thank you for sharing mate!",
+          "date": "27 May 2021"
+        },
+        {
+          "id": 10,
+          "avatar": "",
+          "comment": "Thank you so much for these tips! I never thought these simple steps and trick on the first place!",
+          "date": "27 May 2021"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Do these every single day and you will become a more creative person",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1630892269466-bb170495c2fb?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw1fHx8ZW58MHx8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "comments": [
+        {
+          "id": 136,
+          "avatar": "",
+          "comment": "I like it!",
+          "date": "20 May 2021"
+        },
+        {
+          "id": 120,
+          "avatar": "",
+          "comment": "I love your writing style! It’s easy to understand and so engaging to read it until the end of the line! I have read so many productivity tips and this is so far the best I found! On this fast-changing world we need to be more productive. I wrote some life tips also, you can check on my page. Thank you for sharing mate!",
+          "date": "27 May 2021"
+        },
+        {
+          "id": 10,
+          "avatar": "",
+          "comment": "Thank you so much for these tips! I never thought these simple steps and trick on the first place!",
+          "date": "27 May 2021"
+        }
+      ]
+    },
+    { "id": 3,
+      "name": "Destinations you want to visit",
+      "date": "19 May 2021, 3 comments",
+      "img": "https://images.unsplash.com/photo-1630833445492-6dda89a2adb5?ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyMnx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.\n\nLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "comments": [
+        {
+          "id": 136,
+          "avatar": "",
+          "comment": "I like it!",
+          "date": "20 May 2021"
+        },
+        {
+          "id": 120,
+          "avatar": "",
+          "comment": "I love your writing style! It’s easy to understand and so engaging to read it until the end of the line! I have read so many productivity tips and this is so far the best I found! On this fast-changing world we need to be more productive. I wrote some life tips also, you can check on my page. Thank you for sharing mate!",
+          "date": "27 May 2021"
+        },
+        {
+          "id": 10,
+          "avatar": "",
+          "comment": "Thank you so much for these tips! I never thought these simple steps and trick on the first place!",
+          "date": "27 May 2021"
+        }
+      ]
+    }
+
   ]
 }

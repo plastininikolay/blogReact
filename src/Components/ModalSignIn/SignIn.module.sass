@@ -1,7 +1,8 @@
+@import 'sass/mixins'
 @import 'sass/variables'
 .modal
     position: fixed
-    width: 706px
+    width: rem-f(706)
     top: 190px
     left: 50%
     transform: translateX(-50%)
@@ -14,42 +15,48 @@
     opacity: 1
     transition: 0.3s
     &__header
+        margin-bottom: rem-f(25)
         font-weight: bold
-        font-size: 24px
-        margin-bottom: 25px
-    &__errors_email, &__errors_password
-        position: absolute
+        font-size: rem-f(24)
+        &_disabled
+            color: gray
+            font-weight: normal
+        button
+            font-weight: inherit
+            font-size: inherit
+            cursor: pointer
+    &__errors
         color: $red-color
-        font-size: 18px
-    &__errors_email 
-        top: 149px
-    &__errors_password
-        top: 230px
-
+        font-size: rem-f(18)
+    &__input
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: center
+        height: rem-f(70)
+        margin-bottom: rem-f(20)
     input
         &[type="text"], &[type="password"], &[type="email"]
-            width: 288px 
-            height: 41px
+            width: rem-f(250)
+            height: rem-f(41)
             border: 1px solid #000000
-            margin-bottom: 40px
-            padding: 10px
-            font-size: 18px
+            padding: rem-f(10)
+            font-size: rem-f(18)
             font-weight: 400
-        &[type="password"]
-            margin-bottom: 50px
         &[type="submit"]
             background: #000
             color: #fff
-            width: 150px
-            height: 40px
+            width: rem-f(150)
+            height: rem-f(40)
+            font-size: rem-f(14)
             border: none
             cursor: pointer
     &__exit
-        height: 30px
-        width: 30px
+        height: rem-f(30)
+        width: rem-f(30)
         position: absolute
-        right: 25px
-        top: 25px
+        right: rem-f(25)
+        top: rem-f(25)
         cursor: pointer
         z-index: 10  
         background: none
@@ -64,7 +71,7 @@
             transition: 0.3s
         &:before
             top: 21%
-            transform: translateY(7px) rotate(45deg)
+            transform: translateY(0.4376em) rotate(45deg)
         &:after
             bottom: 21%
-            transform: translateY(-7px) rotate(-45deg)
+            transform: translateY(-0.4376em) rotate(-45deg)

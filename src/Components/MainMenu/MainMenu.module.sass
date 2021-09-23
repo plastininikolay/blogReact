@@ -1,18 +1,19 @@
+@import 'sass/mixins'
 .menu
     position: fixed
-    width: 400px
-    left: -605px
-    top: 0px
+    width: rem-f(400)
+    left: rem-f(-605)
+    top: 0
     z-index: 2
-    border-top: 1080px solid #fff
-    border-right: 305px solid transparent
+    border-top: rem-f(1080) solid #fff
+    border-right: rem-f(305) solid transparent
     transition: 0.7s
     ul
         position: fixed
-        left: calc(-605px + 70px)
+        left: -20.4375em
         top: 150px
         font-weight: bold
-        font-size: 28px
+        font-size: rem-f(28)
         transition: 0.7s
         li
             a, button
@@ -24,5 +25,5 @@
         left: 0px
         transition: 0.7s
         ul
-            left: 70px
+            left: 2.675em
             transition: 0.7s

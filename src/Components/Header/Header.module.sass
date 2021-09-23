@@ -1,14 +1,15 @@
+@import 'sass/mixins'
 .header 
     position: relative
-    margin-bottom: 50px
+    margin-bottom: rem-f(50)
     &__wrapper 
         padding: 38px 55px
         display: flex
-        justify-content: center   
+        justify-content: center  
         align-items: center
     .burger__menu  
-        height: 17px
-        width: 30px
+        height: rem-f(17)
+        width: rem-f(30)
         position: fixed
         left: 36px
         top: 33px
@@ -37,11 +38,28 @@
                 transform: translateY(-6px) rotate(-45deg);
     &__logo
         font-family: 'Montserrat', sans-serif
-        font-size: 36px
+        font-size: rem-f(36)
         font-weight: bold
         cursor: pointer
     &__icon
         position: fixed
-        left: calc(100vw - 105px)
+        width: rem-f(52)
+        left: calc(100vw - 6.5625em)
         top: 34px
         cursor: pointer
+        z-index: 10
+@media screen and (max-width:500px)
+    .header 
+        &__wrapper
+            position: fixed
+            z-index: 3
+            width: 100%
+            background: #fcfcfc
+            top: 0
+            padding: 20px 55px
+        &__icon
+            left: calc(100vw - 80px)
+            top: 17px
+        .burger__menu  
+            left: 11px
+            top: 16px
