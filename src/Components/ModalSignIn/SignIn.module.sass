@@ -1,9 +1,9 @@
-@import 'sass/mixins'
-@import 'sass/variables'
+@import '../../sass/mixins'
+@import '../../sass/variables'
 .modal
     position: fixed
     width: rem-f(706)
-    top: 190px
+    top: 20vh
     left: 50%
     transform: translateX(-50%)
     display: flex
@@ -25,6 +25,8 @@
             font-weight: inherit
             font-size: inherit
             cursor: pointer
+    form
+        text-align: center
     &__errors
         color: $red-color
         font-size: rem-f(18)
@@ -46,7 +48,7 @@
         &[type="submit"]
             background: #000
             color: #fff
-            width: rem-f(150)
+            padding: 0 rem-f(20)
             height: rem-f(40)
             font-size: rem-f(14)
             border: none

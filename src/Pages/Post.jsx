@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router";
-import PostContent from "../Components/Post/Post";
+import PostContent from "../Components/Post/PostContent";
+import EmptyPost from "../Components/Post/EmptyPost";
 import {fetchDetailNews} from "../Store/Actions/DetailNews";
 import {useDispatch, useSelector} from "react-redux";
 
@@ -14,18 +15,13 @@ function Post() {
     const news = useSelector((state)=>state.DetailNews.item);
     const isLoaded = useSelector((state)=>state.DetailNews.isLoaded);
 
-    console.log(news)
-    const emptyArr = [1, 2, 3, 4]
-
     React.useEffect(()=>{
         dispatch(fetchDetailNews(id));
     },[dispatch])
     return (
         <>
-            {isLoaded === true ? <PostContent news={news}/> : ''}
+            {isLoaded === true ? <PostContent news={news}/> : <EmptyPost/>}
         </>
-
-
     )
 }
 export default Post;

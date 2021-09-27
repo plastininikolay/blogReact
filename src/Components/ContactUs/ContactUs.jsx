@@ -22,8 +22,8 @@ function ContactUs({contactRef, openContact}) {
     return (
         <div ref={contactRef} className={openContact === true ? styles.contact : styles.contact + ' ' + styles.contact_disabled}>
             <div className={styles.contact__wrapper}>
-            <h2 className={styles.contact__title}>Новое письмо</h2>
-            <div className={styles.contact__descr}>Напишите нам, если у вас возникли вопросы или предложения :)</div>
+            <h2 className={styles.contact__title}>Подписка</h2>
+            <div className={styles.contact__descr}>Подпишитесь, чтобы получать эксклюзивные обновления контента! :)</div>
             <form onSubmit={handleSubmit(onSubmitHandler)}>
                 <fieldset>
                     <legend>Ваш email <span>{errors.email?.message}</span></legend>

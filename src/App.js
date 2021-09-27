@@ -9,6 +9,7 @@ function App() {
     <Layout>
       <Route path='/' component={Home} exact/>
       <Route path='/post/:id' component={Post} exact/>
+
     </Layout>
   );
 }
