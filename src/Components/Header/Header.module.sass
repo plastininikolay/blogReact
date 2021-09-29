@@ -1,4 +1,4 @@
-@import 'sass/mixins'
+@import '../../sass/mixins'
 .header 
     position: relative
     margin-bottom: rem-f(50)
@@ -33,9 +33,9 @@
             &:before, &:after  
                 transition: 0.3s
             &:before
-                transform: translateY(6px) rotate(45deg);
+                transform: translateY(6px) rotate(45deg)
             &:after
-                transform: translateY(-6px) rotate(-45deg);
+                transform: translateY(-6px) rotate(-45deg)
     &__logo
         font-family: 'Montserrat', sans-serif
         font-size: rem-f(36)
@@ -48,7 +48,7 @@
         top: 34px
         cursor: pointer
         z-index: 10
-@media screen and (max-width:500px)
+@media screen and (max-width: 500px)
     .header 
         &__wrapper
             position: fixed

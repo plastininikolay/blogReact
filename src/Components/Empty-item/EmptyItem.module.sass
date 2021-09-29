@@ -1,0 +1,57 @@
+@import '../../sass/mixins'
+@keyframes loading
+    0% 
+        background-position: 100% 50%
+  
+    100% 
+        background-position: 0 50%
+.item
+    display: flex
+    justify-content: space-between
+    transition: 0.3s
+    cursor: pointer
+    height: rem-f(250)
+    overflow: hidden
+    margin-bottom: 50px
+    &:last-child
+        margin-bottom: 0px
+    &__img
+        width: rem-f(430)
+        height: inherit  
+        overflow: hidden  
+        @include loading-status
+
+    &__text_wrapper
+        width: rem-f(430)
+        display: flex
+        flex-direction: column
+    &:hover
+        transform: scale(1.02)
+        transition: 0.3s
+      
+    &__header
+        @include loading-status
+        width: 100%
+        height: rem-f(42)
+    &__date
+            margin-top: 10px
+            @include loading-status
+            height: rem-f(20)
+            margin-bottom: rem-f(38)
+    &__descr
+        @include loading-status
+        flex-grow: 2
+@media screen and (max-width: 500px)
+    .item
+        flex-direction: column
+        height: rem-f(400)
+        &__header
+            height: rem-f(80)
+        &__img, &__text_wrapper
+            width: auto
+        &__img
+            height: 205px
+        &__date
+            margin-bottom: rem-f(8)
+        &__descr
+            height: rem-f(70)

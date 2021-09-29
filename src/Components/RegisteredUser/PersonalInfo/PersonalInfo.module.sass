@@ -1,0 +1,49 @@
+@import '../../../sass/mixins'
+@import '../../../sass/variables'
+.personal
+    margin-top: rem-f(80)
+    &__icon
+        @include size(rem-f(68))
+        display: block
+        margin: 0 auto
+    &__card
+        width: rem-f(750)
+        height: rem-f(275)
+        margin: 40px auto 0 auto
+        padding: 33px 78px
+        background: #F5F5F5
+        border: 4px solid #000000
+        transform: skewX(-15deg)
+    &__wrapper
+        transform: skewX(15deg)
+        display: flex
+        justify-content: space-between
+    &__title
+        font-weight: bold
+        font-size: rem-f(28)
+        margin-bottom: 34px
+    &__info
+        margin-bottom: 23px
+        font-weight: bold
+        font-size: 24px
+    &__first
+        .personal__info:last-child
+            margin: 0
+    &__second
+        display: flex
+        flex-direction: column
+        justify-content: space-between
+        align-items: end
+        img
+            width: 83px
+            height: 83px
+            border: 4px #000 solid
+            border-radius: 50%
+    &__change
+        color: $red-color
+        font-weight: bold
+        font-size: 24px
+        line-height: 32px
+        cursor: pointer
+
+

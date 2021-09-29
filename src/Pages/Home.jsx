@@ -21,7 +21,10 @@ function Home() {
     return (
         <div className={styles.items_wrapper}>
             {
-                isLoaded === false ? emptyArr.map((item, idx)=><EmptyItem key={idx}/>) :
+                isLoaded === false ?
+                    emptyArr.map((item, idx)=><EmptyItem key={idx}/>)
+
+                    :
                 news.map((item, idx)=><Link key={idx} className={styles.item__link} to={`/post/${item.id}`}><NewsItem {...item}/></Link>)
             }
       

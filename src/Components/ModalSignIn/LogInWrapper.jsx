@@ -24,7 +24,7 @@ function LogInWrapper() {
         //    console.log(response + ' ' + 'server answer');
         //})
         reset();
-        document.location.href = 'post/1';
+        document.location.href = 'im';
 
     };
 
